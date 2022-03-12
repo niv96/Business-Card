@@ -202,19 +202,25 @@
 
                 <!-- form-->
 
-                <!-- <form
-                  name="sentMessage"
+                <form
+                  name="contact-form"
                   id="contactForm"
                   novalidate="novalidate"
+                  method="post"
                   action="POST"
                   data-netlify="true"
                 >
                   <div class="control-group">
                     <input
+                      type="hidden"
+                      name="form-name"
+                      value="contact-form"
+                    />
+                    <input
                       type="text"
                       class="form-control"
                       id="name"
-                      placeholder="שם ושם משפחה"
+                      placeholder="שם מלא"
                       required="required"
                       data-validation-required-message="הכנס שם ושם משפחה"
                     />
@@ -257,72 +263,8 @@
                       שלח הודעה
                     </button>
                   </div>
-                </form> -->
-
-                <!-- Form End -->
-
-                <!-- form -->
-                <form
-                  name="contactForm"
-                  id="contactForm"
-                  method="post"
-                  action="POST"
-                  data-netlify="true"
-                >
-                  <fieldset>
-                    <div class="form-field">
-                      <input
-                        name="contactName"
-                        type="text"
-                        id="contactName"
-                        placeholder="שם מלא"
-                        value=""
-                        minlength="2"
-                        required=""
-                      />
-                    </div>
-                    <div class="form-field">
-                      <input
-                        name="contactEmail"
-                        type="email"
-                        id="contactEmail"
-                        placeholder="Email"
-                        value=""
-                        required=""
-                      />
-                    </div>
-                    <div class="form-field">
-                      <input
-                        name="contactSubject"
-                        type="text"
-                        id="contactSubject"
-                        placeholder="Subject"
-                        value=""
-                      />
-                    </div>
-                    <div class="form-field">
-                      <textarea
-                        name="contactMessage"
-                        id="contactMessage"
-                        placeholder="message"
-                        rows="10"
-                        cols="50"
-                        required=""
-                      ></textarea>
-                    </div>
-                    <div class="form-field">
-                      <button class="submitform">Submit</button>
-                      <div id="submit-loader">
-                        <div class="text-loader"></div>
-                        <div class="s-loader">
-                          <div class="bounce1"></div>
-                          <div class="bounce2"></div>
-                          <div class="bounce3"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </fieldset>
                 </form>
+
                 <!-- Form End -->
               </div>
             </div>
