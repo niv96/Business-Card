@@ -202,7 +202,7 @@
 
                 <!-- form-->
 
-                <form name="contact" method="post" data-netlify="true">
+                <form name="contact" method="POST" data-netlify="true">
                   <input type="hidden" name="form-name" value="contact" />
                   <div class="control-group">
                     <input
@@ -257,6 +257,41 @@
                       שלח הודעה
                     </button>
                   </div>
+                </form>
+
+                <form name="contact" method="POST" data-netlify="true">
+                  <input
+                    type="text"
+                    placeholder="name"
+                    class="box"
+                    name="name"
+                  />
+                  <input
+                    type="email"
+                    placeholder="email"
+                    class="box"
+                    name="email"
+                  />
+                  <input
+                    type="text"
+                    placeholder="project"
+                    class="box"
+                    name="project"
+                  />
+                  <textarea
+                    name="message"
+                    id=""
+                    cols="30"
+                    rows="10"
+                    class="box message"
+                    placeholder="message"
+                  ></textarea>
+                  <div class="field">
+                    <div data-netlify-recaptcha="true"></div>
+                  </div>
+                  <button type="submit" class="btn">
+                    send <i class="fas fa-paper-plane"></i>
+                  </button>
                 </form>
 
                 <!-- Form End -->
