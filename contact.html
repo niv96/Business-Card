@@ -202,97 +202,48 @@
 
                 <!-- form-->
 
-                <form name="contact" method="POST" data-netlify="true">
-                  <input type="hidden" name="form-name" value="contact" />
-                  <div class="control-group">
-                    <input
-                      type="hidden"
-                      name="form-name"
-                      value="contact-form"
-                    />
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="name"
-                      placeholder="שם מלא"
-                      required="required"
-                      data-validation-required-message="הכנס שם ושם משפחה"
-                    />
-                    <p class="help-block text-danger"></p>
-                  </div>
-                  <div class="control-group">
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="email"
-                      placeholder="מייל"
-                      required="required"
-                      data-validation-required-message="הכנס מייל"
-                    />
-                    <p class="help-block text-danger"></p>
-                  </div>
-                  <div class="control-group">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="subject"
-                      placeholder="נושא"
-                      required="required"
-                      data-validation-required-message="הכנס נושא בבקשה"
-                    />
-                    <p class="help-block text-danger"></p>
-                  </div>
-                  <div class="control-group">
-                    <textarea
-                      class="form-control"
-                      id="message"
-                      placeholder="הודעה"
-                      required="required"
-                      data-validation-required-message="Please enter your message"
-                    ></textarea>
-                    <p class="help-block text-danger"></p>
-                  </div>
-                  <div>
-                    <button class="btn" type="submit" id="sendMessageButton">
-                      שלח הודעה
+                <div class="container">
+                  <form
+                    target="_blank"
+                    action="https://formsubmit.co/nivnetanel96@gmail.com"
+                    method="POST"
+                  >
+                    <div class="form-group">
+                      <div class="form-row">
+                        <div class="col">
+                          <input
+                            type="text"
+                            name="name"
+                            class="form-control"
+                            placeholder="שם מלא"
+                            required
+                          />
+                        </div>
+                        <div class="col">
+                          <input
+                            type="email"
+                            name="email"
+                            class="form-control"
+                            placeholder="כתובת אי-מייל"
+                            required
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <textarea
+                        placeholder="ההודעה שלך"
+                        class="form-control"
+                        name="message"
+                        rows="10"
+                        required
+                      ></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-lg btn-dark btn-block">
+                      Submit Form
                     </button>
-                  </div>
-                </form>
-
-                <form name="contact" method="POST" data-netlify="true">
-                  <input
-                    type="text"
-                    placeholder="name"
-                    class="box"
-                    name="name"
-                  />
-                  <input
-                    type="email"
-                    placeholder="email"
-                    class="box"
-                    name="email"
-                  />
-                  <input
-                    type="text"
-                    placeholder="project"
-                    class="box"
-                    name="project"
-                  />
-                  <textarea
-                    name="message"
-                    id=""
-                    cols="30"
-                    rows="10"
-                    class="box message"
-                    placeholder="message"
-                  ></textarea>
-                  <div class="field">
-                    <div data-netlify-recaptcha="true"></div>
-                  </div>
-                  <button type="submit" class="btn">
-                    send <i class="fas fa-paper-plane"></i>
-                  </button>
-                </form>
+                  </form>
+                </div>
 
                 <!-- Form End -->
               </div>
